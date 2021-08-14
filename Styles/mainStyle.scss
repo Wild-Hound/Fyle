@@ -114,6 +114,9 @@ p {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
       gap: 2em;
+      > img {
+        width: 100%;
+      }
     }
   }
   @media all and (max-width: 1000px) {
@@ -121,8 +124,101 @@ p {
       .menuWrapper {
         grid-template-columns: 1fr;
         max-width: 600px;
+        margin: auto;
+        padding: 1em;
       }
     }
+  }
+}
+
+.section5 {
+  background-color: #fafafa;
+  padding: 5em 0;
+  .wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    .innerWrapper {
+      max-width: 1300px;
+      text-align: center;
+    }
+  }
+}
+
+.section6 {
+  padding: 5em 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    display: inline-block;
+    .feedbackBLock {
+      position: relative;
+      > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .feedback {
+        position: relative;
+        z-index: 2;
+        padding: 0.5em 1em;
+        max-width: 65ch;
+        font-size: 1.25em;
+        text-align: start;
+        .quote {
+          display: inline-block;
+          color: #808080;
+          margin-top: 1em;
+          > span {
+            font-weight: 600;
+            color: #ff3147;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #ff3147;
+  padding: 5em 1em;
+  .wrapper {
+    max-width: 1600px;
+    margin-left: auto;
+    .innerWrapper {
+      max-width: 1300px;
+      text-align: center;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.boxGroup {
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+  .box {
+    background-color: white;
+    padding: 2em;
+    transition: all 0.35s;
+    &:hover {
+      box-shadow: 3px 6px 20px #672c2c1f;
+    }
+    .count {
+      font-size: 3.75em;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+    }
+  }
+  @media all and (max-width: 1000px) {
+    padding: 1em;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: auto;
   }
 }
 

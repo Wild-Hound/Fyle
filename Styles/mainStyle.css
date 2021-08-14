@@ -168,11 +168,134 @@ p {
   gap: 2em;
 }
 
+.section4 .wrapper .menuWrapper > img {
+  width: 100%;
+}
+
 @media all and (max-width: 1000px) {
   .section4 .wrapper .menuWrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     max-width: 600px;
+    margin: auto;
+    padding: 1em;
+  }
+}
+
+.section5 {
+  background-color: #fafafa;
+  padding: 5em 0;
+}
+
+.section5 .wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+}
+
+.section5 .wrapper .innerWrapper {
+  max-width: 1300px;
+  text-align: center;
+}
+
+.section6 {
+  padding: 5em 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section6 .wrapper {
+  display: inline-block;
+}
+
+.section6 .wrapper .feedbackBLock {
+  position: relative;
+}
+
+.section6 .wrapper .feedbackBLock > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section6 .wrapper .feedbackBLock .feedback {
+  position: relative;
+  z-index: 2;
+  padding: 0.5em 1em;
+  max-width: 65ch;
+  font-size: 1.25em;
+  text-align: start;
+}
+
+.section6 .wrapper .feedbackBLock .feedback .quote {
+  display: inline-block;
+  color: #808080;
+  margin-top: 1em;
+}
+
+.section6 .wrapper .feedbackBLock .feedback .quote > span {
+  font-weight: 600;
+  color: #ff3147;
+}
+
+footer {
+  background-color: #ff3147;
+  padding: 5em 1em;
+}
+
+footer .wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+}
+
+footer .wrapper .innerWrapper {
+  max-width: 1300px;
+  text-align: center;
+}
+
+footer .wrapper .innerWrapper > img {
+  width: 100%;
+}
+
+.boxGroup {
+  padding: 1em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+}
+
+.boxGroup .box {
+  background-color: white;
+  padding: 2em;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.boxGroup .box:hover {
+  -webkit-box-shadow: 3px 6px 20px #672c2c1f;
+          box-shadow: 3px 6px 20px #672c2c1f;
+}
+
+.boxGroup .box .count {
+  font-size: 3.75em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media all and (max-width: 1000px) {
+  .boxGroup {
+    padding: 1em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: auto;
   }
 }
 
