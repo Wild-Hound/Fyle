@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/mainStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -37,12 +44,90 @@
         </div>
         <div class="imgSlider">
           <div id="imgWrapper">
-            <img src="./Resources/1.png" />
-            <img src="./Resources/2.png" />
-            <img src="./Resources/3.png" />
-            <img src="./Resources/1.png" />
-            <img src="./Resources/2.png" />
-            <img src="./Resources/3.png" />
+            <div>
+              <img src="./Resources/1.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div>
+              <img src="./Resources/2.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div>
+              <img src="./Resources/3.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div>
+              <img src="./Resources/1.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div>
+              <img src="./Resources/2.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+            <div>
+              <img src="./Resources/3.png" />
+              <div class="imgCover">
+                <img src="./Resources/icon.svg" />
+                <p class="heading">WEB DEVELOPMENT</p>
+                <p>
+                  Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  Pellentesque
+                </p>
+                <a href="https://www.fylehq.com/" target="_blank" class="btn"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
           </div>
           <div id="sliderBtnGroup"></div>
         </div>
@@ -181,13 +266,31 @@
     <section id="popup">
       <div class="popupCard">
         <p class="heading">Talk to us</p>
-        <form>
-          <input type="text" placeholder="Work email" />
+        <form
+          action="https://getform.io/f/633975d4-ae30-464d-8e3d-02c54dd4e370"
+          method="POST"
+        >
+          <input type="text" placeholder="Work email" name="email" />
           <span class="inputGroup"
-            ><input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name"
-          /></span>
-          <button>Contact Us</button>
+            ><input type="text" placeholder="First Name" name="firstName" />
+            <input type="text" placeholder="Last Name" name="lastName" />
+          </span>
+          <span class="agreement">
+            <label class="checkBox">
+              I agree to Fyle's terms and conditions, and provide consent to
+              send me communication.
+              <input type="checkbox" checked="checked" name="agree" />
+              <span class="checkmark">
+                <i class="fas fa-check"></i>
+              </span>
+            </label>
+          </span>
+          <input
+            type="submit"
+            class="submitBtn"
+            value="Contact Us"
+            name="submit"
+          />
         </form>
       </div>
       <button id="closeBtn">x</button>

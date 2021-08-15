@@ -89,6 +89,7 @@ function imgSlider() {
   }
 
   const btnGroup = document.getElementById("sliderBtnGroup");
+  btnGroup.innerHTML = "";
   for (let i = 0; i < buttonNums; i++) {
     const temp = document.createElement("span");
     i == 0
@@ -100,4 +101,7 @@ function imgSlider() {
   }
 }
 
+window.addEventListener("resize", (e) => {
+  imgSlider();
+});
 imgSlider();
