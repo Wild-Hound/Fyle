@@ -243,6 +243,155 @@ p {
   color: #ff3147;
 }
 
+.imgSlider {
+  overflow-x: hidden;
+}
+
+.imgSlider #imgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.imgSlider #imgWrapper > img {
+  height: 520px;
+  width: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: inline-block;
+}
+
+.imgSlider #sliderBtnGroup {
+  padding: 1.5em 0;
+}
+
+.imgSlider #sliderBtnGroup .sliderBtn {
+  margin: 0 0.5em;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.imgSlider #sliderBtnGroup .active {
+  background-color: #ff3147;
+  position: relative;
+}
+
+.imgSlider #sliderBtnGroup .active::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  border: 1px solid #ff3147;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#popup .popupCard {
+  background-color: white;
+  padding: 2em;
+}
+
+#popup .popupCard .heading {
+  font-size: 1.25em;
+  margin-top: 0;
+}
+
+#popup .popupCard > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+#popup .popupCard > form input {
+  border: none;
+  border-bottom: 1px solid #6f718f99;
+  outline: none;
+  font-size: 0.875em;
+  padding-bottom: 0.5em;
+}
+
+#popup .popupCard > form input::-webkit-input-placeholder {
+  color: #6f718f99;
+}
+
+#popup .popupCard > form input:-ms-input-placeholder {
+  color: #6f718f99;
+}
+
+#popup .popupCard > form input::-ms-input-placeholder {
+  color: #6f718f99;
+}
+
+#popup .popupCard > form input::placeholder {
+  color: #6f718f99;
+}
+
+#popup .popupCard > form > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+#popup .popupCard > form > button {
+  background-color: #ff3147;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 1em;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+#popup #closeBtn {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 4em;
+  background-color: transparent;
+  color: #d1d1d199;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 footer {
   background-color: #ff3147;
   padding: 5em 1em;

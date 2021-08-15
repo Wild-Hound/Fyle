@@ -35,6 +35,17 @@
             lacus nec risus finibus feugiat et fermentum
           </p>
         </div>
+        <div class="imgSlider">
+          <div id="imgWrapper">
+            <img src="./Resources/1.png" />
+            <img src="./Resources/2.png" />
+            <img src="./Resources/3.png" />
+            <img src="./Resources/1.png" />
+            <img src="./Resources/2.png" />
+            <img src="./Resources/3.png" />
+          </div>
+          <div id="sliderBtnGroup"></div>
+        </div>
       </div>
     </section>
     <!--  -->
@@ -87,7 +98,7 @@
         <span class="lightHighlight">WHY CHOOSE US</span>
         <h2 class="heading">WHY WE ARE BEST</h2>
         <div class="menuWrapper">
-          <img src="./Resources/image.png" class="menuimg" />
+          <img src="./Resources/image.png" id="menuimg" />
           <ul class="menu">
             <li class="menuOption">
               <p class="optionTitle">Genderless Kei – Japan’s Hot</p>
@@ -167,6 +178,21 @@
       </div>
     </section>
     <!--  -->
+    <section id="popup">
+      <div class="popupCard">
+        <p class="heading">Talk to us</p>
+        <form>
+          <input type="text" placeholder="Work email" />
+          <span class="inputGroup"
+            ><input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name"
+          /></span>
+          <button>Contact Us</button>
+        </form>
+      </div>
+      <button id="closeBtn">x</button>
+    </section>
+    <!--  -->
     <footer>
       <div class="wrapper">
         <div class="innerWrapper">
@@ -174,5 +200,6 @@
         </div>
       </div>
     </footer>
+    <script src="./Scripts/mainScript.js"></script>
   </body>
 </html>

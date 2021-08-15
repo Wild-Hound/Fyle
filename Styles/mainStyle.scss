@@ -180,6 +180,112 @@ p {
   }
 }
 
+.imgSlider {
+  overflow-x: hidden;
+  #imgWrapper {
+    display: flex;
+    gap: 20px;
+    transition: all 0.35s;
+    > img {
+      height: 520px;
+      width: 370px;
+      object-fit: cover;
+      object-position: center;
+      display: inline-block;
+    }
+  }
+  #sliderBtnGroup {
+    padding: 1.5em 0;
+    .sliderBtn {
+      margin: 0 0.5em;
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      border-radius: 10px;
+      background-color: #000000;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #ff3147;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        border: 1px solid #ff3147;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.5);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  .popupCard {
+    background-color: white;
+    padding: 2em;
+    .heading {
+      font-size: 1.25em;
+      margin-top: 0;
+    }
+    > form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      input {
+        border: none;
+        border-bottom: 1px solid #6f718f99;
+        outline: none;
+        font-size: 0.875em;
+        padding-bottom: 0.5em;
+        &::placeholder {
+          color: #6f718f99;
+        }
+      }
+      > span {
+        display: flex;
+        gap: 1.5em;
+      }
+      > button {
+        background-color: #ff3147;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 1em;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 1em;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  #closeBtn {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 4em;
+    background-color: transparent;
+    color: #d1d1d199;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
 footer {
   background-color: #ff3147;
   padding: 5em 1em;
