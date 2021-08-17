@@ -32,6 +32,10 @@ p {
 
       .heroHeading {
         font-size: 3.75em;
+        margin-top: 0.35em;
+      }
+      .parah {
+        max-width: 70ch;
       }
     }
     .imgWrapper {
@@ -68,7 +72,7 @@ p {
       gap: 3em;
       align-items: center;
       > h2 {
-        max-width: 20ch;
+        max-width: 15ch;
       }
       > p {
         max-width: 60ch;
@@ -426,8 +430,8 @@ footer {
 }
 
 .card {
-  width: 250px;
   text-align: start;
+  min-width: fit-content;
   @media all and (max-width: 1000px) {
     text-align: center;
   }
@@ -437,6 +441,9 @@ footer {
   .cardTitle {
     font-size: 1.25em;
     font-weight: 600;
+  }
+  .cardParah {
+    max-width: 25ch;
   }
 }
 
