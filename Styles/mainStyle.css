@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cormorant SC", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -20,6 +20,11 @@ p {
 }
 
 .section1 {
+  padding: 5em 0;
+}
+
+.section1 .wrapper {
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,30 +34,31 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 5em 0;
-  max-width: 1600px;
-  margin-left: auto;
+  margin: auto;
 }
 
-.section1 .content {
+.section1 .wrapper .content {
   max-width: 70ch;
   padding-right: 3.5em;
 }
 
-.section1 .content .heroHeading {
+.section1 .wrapper .content .heroHeading {
   font-size: 3.75em;
 }
 
-.section1 .imgWrapper {
+.section1 .wrapper .imgWrapper {
   max-width: 900px;
 }
 
-.section1 .imgWrapper > img {
+.section1 .wrapper .imgWrapper > img {
   width: 100%;
 }
 
 @media all and (max-width: 1000px) {
   .section1 {
+    padding: 5em 1em;
+  }
+  .section1 .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -61,24 +67,23 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section1 .content {
+  .section1 .wrapper .content {
     padding: 0;
   }
-  .section1 .imgWrapper {
+  .section1 .wrapper .imgWrapper {
     max-width: 70ch;
-    padding: 1em;
+    padding: 1em 0;
   }
 }
 
 .section2 {
   background-color: #fafafa;
   padding: 5em 0;
-  padding-left: 3.5em;
 }
 
 .section2 .wrapper {
-  max-width: 1600px;
-  margin-left: auto;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .section2 .wrapper .contentGroup {
@@ -549,13 +554,13 @@ footer .wrapper .innerWrapper > img {
   }
 }
 
-.menu {
+#menu {
   text-align: start;
   display: -ms-grid;
   display: grid;
 }
 
-.menu .menuOption {
+#menu .menuOption {
   padding: 1em;
   background-color: #f6f6f6;
   cursor: pointer;
@@ -563,14 +568,14 @@ footer .wrapper .innerWrapper > img {
   transition: all 0.35s;
 }
 
-.menu .menuOption:hover {
-  background-color: #ff3147;
-  color: white;
-}
-
-.menu .menuOption .optionTitle {
+#menu .menuOption .optionTitle {
   font-size: 1.25em;
   font-weight: 500;
+}
+
+.menuActive {
+  background-color: #ff3147 !important;
+  color: white;
 }
 
 .card {

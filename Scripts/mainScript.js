@@ -24,6 +24,15 @@ function setMenuImg(id) {
     default:
       throw new Error("Invalid id");
   }
+
+  const menuList = document.getElementById("menu").children;
+  for (let i = 0; i < menuList.length; i++) {
+    if (i == id) {
+      menuList[i].className = "menuOption menuActive";
+    } else {
+      menuList[i].className = "menuOption";
+    }
+  }
 }
 // contactBtn logic here
 const contactBtn = document.getElementById("contactBtn");
