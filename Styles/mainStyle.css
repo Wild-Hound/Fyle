@@ -359,6 +359,10 @@ p {
   font-weight: 700;
 }
 
+.imgCover .btn > img {
+  margin-left: 10px;
+}
+
 #popup {
   display: none;
   position: fixed;
