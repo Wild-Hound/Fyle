@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
+@font-face {
+  font-family: "AktivGrotesk-Regular";
+  src: url("../Resources/AktivGroteskCorp-Regular.ttf");
+}
+@font-face {
+  font-family: "AktivGrotesk-Bold";
+  src: url("../Resources/AktivGroteskCorp-Bold.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -290,6 +299,7 @@ p {
     .heading {
       font-size: 1.25em;
       margin-top: 0;
+      // font-family: "AktivGrotesk-Bold";
     }
     > form {
       display: flex;
@@ -301,8 +311,11 @@ p {
         outline: none;
         font-size: 0.875em;
         padding-bottom: 0.5em;
+        font-family: "AktivGrotesk-Regular" !important;
+        width: 100%;
         &::placeholder {
           color: #6f718f99;
+          font-family: "AktivGrotesk-Regular" !important;
         }
       }
       > span {
@@ -317,7 +330,8 @@ p {
           gap: 0.5em;
           max-width: 45ch;
           font-size: 14px;
-          font-family: "Poppins", sans-serif;
+          font-family: "AktivGrotesk-Regular" !important;
+          line-height: 1.5em;
           color: #616678;
           margin: 0;
           position: relative;
@@ -354,6 +368,7 @@ p {
         margin: 1em;
         margin-bottom: 0;
         cursor: pointer;
+        margin-top: 0;
       }
     }
   }
